@@ -1,5 +1,6 @@
 import React from 'react';
 
+import MenuForm from './components/MenuForm';
 import Section from './components/Section';
 import SideMenu from './components/SideMenu';
 
@@ -34,7 +35,9 @@ const App: React.FC = () => {
         title={data[4].title}
         description={data[4].description}
       />
-      <SideMenu />
+      <SideMenu>
+        <MenuForm />
+      </SideMenu>
       <GlobalStyles />
     </>
   );
